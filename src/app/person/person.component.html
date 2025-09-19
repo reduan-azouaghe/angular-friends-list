@@ -1,0 +1,7 @@
+<p>{{ person }}</p>
+
+@if (!isPersonFavorite) {
+<button (click)="addPersonFavorite(person)">Favorite</button>
+} @else {
+<button (click)="removePersonFavorite(person)">Remove</button>
+}
